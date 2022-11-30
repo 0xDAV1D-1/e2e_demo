@@ -111,7 +111,7 @@ def retrieve_cached_results(destination, session, url):
             cache_file.close()
         except:
             pass
-    """Check to see if the cached Destination KB result was last saved more than 2 weeks ago. If so, request a fresh 
+    """Check to see if the cached Destination KB result was last saved more than 1 day ago. If so, request a fresh 
        Desination KB lookup and store it (if it looks okay).
     """
     now_utc = float(datetime.datetime.utcnow().strftime('%s'))
